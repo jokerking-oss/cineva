@@ -1,0 +1,26 @@
+# Docker 构建排除清单
+# 与 .railwayignore 同源：绝不把 Windows 版依赖或本地数据打进镜像
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+code/data/sessions/
+code/result/
+temp/
+logs/
+
+config.yaml
+
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+.git/
+.gitignore
+.DS_Store
+Thumbs.db
+*.log
